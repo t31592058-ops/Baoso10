@@ -1,93 +1,4 @@
-﻿-- https:
-            NameMon = "Chief Petty Officer";
-            CFrameQ = CFrame.new(- 5035.49609375, 28.677835464478, 4324.1840820313);
-            CFrameMon = CFrame.new(- 4931.1552734375, 65.793113708496, 4121.8393554688);
-        elseif ((v197 == 150) or (v197 <= 174) or (SelectMonster == "Sky Bandit")) then
-            Ms = "Sky Bandit";
-            NameQuest = "SkyQuest";
-            QuestLv = 1;
-            NameMon = "Sky Bandit";
-            CFrameQ = CFrame.new(- 4842.1372070313, 717.69543457031, - 2623.0483398438);
-            CFrameMon = CFrame.new(- 4955.6411132813, 365.46365356445, - 2908.1865234375);
-        elseif ((v197 == 175) or (v197 <= 189) or (SelectMonster == "Dark Master")) then
-            Ms = "Dark Master";
-            NameQuest = "SkyQuest";
-            QuestLv = 2;
-            NameMon = "Dark Master";
-            CFrameQ = CFrame.new(- 4842.1372070313, 717.69543457031, - 2623.0483398438);
-            CFrameMon = CFrame.new(- 5148.1650390625, 439.04571533203, - 2332.9611816406);
-        elseif ((v197 == 190) or (v197 <= 209) or (SelectMonster == "Prisoner")) then
-            Ms = "Prisoner";
-            NameQuest = "PrisonerQuest";
-            QuestLv = 1;
-            NameMon = "Prisoner";
-            CFrameQ = CFrame.new(5310.60547, 0.350014925, 474.946594, 0.0175017118, 0, 0.999846935, 0, 1, 0, - 0.999846935, 0, 0.0175017118);
-            CFrameMon = CFrame.new(4937.31885, 0.332031399, 649.574524, 0.694649816, 0, - 0.719348073, 0, 1, 0, 0.719348073, 0, 0.694649816);
-        elseif ((v197 == 210) or (v197 <= 249) or (SelectMonster == "Dangerous Prisoner")) then
-            Ms = "Dangerous Prisoner";
-            NameQuest = "PrisonerQuest";
-            QuestLv = 2;
-            NameMon = "Dangerous Prisoner";
-            CFrameQ = CFrame.new(5310.60547, 0.350014925, 474.946594, 0.0175017118, 0, 0.999846935, 0, 1, 0, - 0.999846935, 0, 0.0175017118);
-            CFrameMon = CFrame.new(5099.6626, 0.351562679, 1055.7583, 0.898906827, 0, - 0.438139856, 0, 1, 0, 0.438139856, 0, 0.898906827);
-        elseif ((v197 == 250) or (v197 <= 274) or (SelectMonster == "Toga Warrior")) then
-            Ms = "Toga Warrior";
-            NameQuest = "ColosseumQuest";
-            QuestLv = 1;
-            NameMon = "Toga Warrior";
-            CFrameQ = CFrame.new(- 1577.7890625, 7.4151420593262, - 2984.4838867188);
-            CFrameMon = CFrame.new(- 1872.5166015625, 49.080215454102, - 2913.810546875);
-        elseif ((v197 == 275) or (v197 <= 299) or (SelectMonster == "Gladiator")) then
-            Ms = "Gladiator";
-            NameQuest = "ColosseumQuest";
-            QuestLv = 2;
-            NameMon = "Gladiator";
-            CFrameQ = CFrame.new(- 1577.7890625, 7.4151420593262, - 2984.4838867188);
-            CFrameMon = CFrame.new(- 1521.3740234375, 81.203170776367, - 3066.3139648438);
-        elseif ((v197 == 300) or (v197 <= 324) or (SelectMonster == "Military Soldier")) then
-            Ms = "Military Soldier";
-            NameQuest = "MagmaQuest";
-            QuestLv = 1;
-            NameMon = "Military Soldier";
-            CFrameQ = CFrame.new(- 5316.1157226563, 12.262831687927, 8517.00390625);
-            CFrameMon = CFrame.new(- 5369.0004882813, 61.24352645874, 8556.4921875);
-        elseif ((v197 == 325) or (v197 <= 374) or (SelectMonster == "Military Spy")) then
-            Ms = "Military Spy";
-            NameQuest = "MagmaQuest";
-            QuestLv = 2;
-            NameMon = "Military Spy";
-            CFrameQ = CFrame.new(- 5316.1157226563, 12.262831687927, 8517.00390625);
-            CFrameMon = CFrame.new(- 5787.00293, 75.8262634, 8651.69922, 0.838590562, 0, - 0.544762194, 0, 1, 0, 0.544762194, 0, 0.838590562);
-        elseif ((v197 == 375) or (v197 <= 399) or (SelectMonster == "Fishman Warrior")) then
-            Ms = "Fishman Warrior";
-            NameQuest = "FishmanQuest";
-            QuestLv = 1;
-            NameMon = "Fishman Warrior";
-            CFrameQ = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734);
-            CFrameMon = CFrame.new(60844.10546875, 98.462875366211, 1298.3985595703);
-            if (_G.AutoLevel and ((CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000)) then
-                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(61163.8515625, 11.6796875, 1819.7841796875));
-            end
-        elseif ((v197 == 400) or (v197 <= 449) or (SelectMonster == "Fishman Commando")) then
-            Ms = "Fishman Commando";
-            NameQuest = "FishmanQuest";
-            QuestLv = 2;
-            NameMon = "Fishman Commando";
-            CFrameQ = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734);
-            CFrameMon = CFrame.new(61738.3984375, 64.207321166992, 1433.8375244141);
-            if (_G.AutoLevel and ((CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000)) then
-                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(61163.8515625, 11.6796875, 1819.7841796875));
-            end
-        elseif ((v197 == 10) or (v197 <= 474) or (SelectMonster == "God's Guard")) then
-            Ms = "God's Guard";
-            NameQuest = "SkyExp1Quest";
-            QuestLv = 1;
-            NameMon = "God's Guard";
-            CFrameQ = CFrame.new(- 4721.8603515625, 845.30297851563, - 1953.8489990234);
-            CFrameMon = CFrame.new(- 4628.0498046875, 866.92877197266, - 1931.2352294922);
-            if (_G.AutoLevel and ((CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000)) then
-                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(- 4607.82275, 872.54248, - 1667.55688));
-            end
+﻿-- 
         elseif ((v197 == 475) or (v197 <= 524) or (SelectMonster == "Shanda")) then
             Ms = "Shanda";
             NameQuest = "SkyExp1Quest";
@@ -7167,3 +7078,4 @@ function UpdateRealFruitEsp()
                     v1104.Name = "NameEsp" .. Number ;
                     v1104.ExtentsOffset = Vector3.new(0, 1, 0);
                     v1104.Size = UDim2.new(1, 200, 1, 30);
+
