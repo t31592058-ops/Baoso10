@@ -311,7 +311,7 @@ v5:Destroy();
 --         pcall(v422);
 --     end
 -- end);
-local v14 = loadstring(game:HttpGet(("https://raw.githubusercontent.com/coolgui/bytrinh/refs/heads/main/baoso10.txt")))()
+local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/coolgui/bytrinh/refs/heads/main/baoso10.txt"))()
 local v15 = v14:CreateWindow({
     Title = "bao so 10 cap 12",
     SubTitle = "Blox Fruit",
@@ -9327,4 +9327,5 @@ v14:Notify({
     Title = "Bao so 10",
     Content = "Xong roi hehe",
     Duration = 10
+
 });
